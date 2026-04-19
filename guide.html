@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошаговый гайд</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Веб-старт</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="html-basics.html">HTML</a>
+            <a href="css-basics.html">CSS</a>
+            <a href="guide.html">Гайд</a>
+            <a href="about.html">О проекте</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Создайте свой первый сайт за 15 минут!</h2>
+            <p>Следуйте этим пяти шагам — и у вас будет работающая веб-страница. Не нужны специальные программы, только блокнот и браузер.</p>
+        </div>
+
+        <div class="card">
+            <h2>Шаг 1. Создайте папку и файл</h2>
+            <p>Создайте на рабочем столе новую папку, назовите её <code>мой_сайт</code>. Внутри папки создайте текстовый документ и переименуйте его в <code>index.html</code> (расширение должно быть .html, а не .txt).</p>
+            <p><em>Совет:</em> включите в проводнике отображение расширений файлов.</p>
+        </div>
+
+        <div class="card">
+            <h2>Шаг 2. Напишите базовую структуру HTML</h2>
+            <p>Откройте файл <code>index.html</code> в любом текстовом редакторе (Блокнот, VS Code, Notepad++). Скопируйте и вставьте следующий код:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Моя первая страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это мой первый сайт, созданный с нуля.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="card">
+            <h2>Шаг 3. Сохраните файл</h2>
+            <p>Нажмите <kbd>Ctrl+S</kbd> (или <kbd>Cmd+S</kbd> на Mac), чтобы сохранить изменения. Убедитесь, что файл имеет расширение <code>.html</code>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Шаг 4. Откройте в браузере</h2>
+            <p>Найдите файл <code>index.html</code> в папке, кликните по нему правой кнопкой мыши и выберите «Открыть с помощью» → ваш браузер (Chrome, Firefox, Edge). Или просто дважды кликните по файлу — он откроется в браузере по умолчанию.</p>
+            <p>Вы увидите заголовок «Привет, мир!» и абзац. Поздравляю, вы создали сайт!</p>
+        </div>
+
+        <div class="card">
+            <h2>Шаг 5. Внесите изменения</h2>
+            <p>Вернитесь в текстовый редактор, измените текст в тегах <code>&lt;h1&gt;</code> и <code>&lt;p&gt;</code>. Сохраните файл и обновите страницу в браузере (клавиша <kbd>F5</kbd>). Изменения появятся сразу!</p>
+            <p>Попробуйте добавить:</p>
+            <ul>
+                <li>Список ваших любимых книг (теги <code>&lt;ul&gt;</code> и <code>&lt;li&gt;</code>)</li>
+                <li>Ссылку на любой сайт (<code>&lt;a href="https://example.com"&gt;Текст&lt;/a&gt;</code>)</li>
+                <li>Изображение (скачайте картинку и используйте <code>&lt;img src="название.jpg"&gt;</code>)</li>
+            </ul>
+            <a href="html-basics.html" class="btn">Подробнее о тегах →</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026, Проект ученика 10 класса. Буклет — продукт проекта.</p>
+    </footer>
+</body>
+</html>

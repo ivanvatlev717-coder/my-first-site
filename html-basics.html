@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Веб-старт</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="html-basics.html">HTML</a>
+            <a href="css-basics.html">CSS</a>
+            <a href="guide.html">Гайд</a>
+            <a href="about.html">О проекте</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Что такое HTML?</h2>
+            <p><strong>HTML (HyperText Markup Language)</strong> — язык гипертекстовой разметки. Он описывает структуру веб-страницы с помощью тегов. Браузер читает HTML и отображает содержимое: заголовки, абзацы, картинки, ссылки.</p>
+            <p>HTML не является языком программирования — это язык разметки. Он был создан Тимом Бернерсом-Ли в 1991 году.</p>
+        </div>
+
+        <div class="card">
+            <h2>Основные теги (таблица)</h2>
+            <table>
+                <tr>
+                    <th>Тег</th>
+                    <th>Назначение</th>
+                    <th>Пример</th>
+                </tr>
+                <tr><td>&lt;h1&gt;...&lt;h6&gt;</td><td>Заголовки разных уровней</td><td>&lt;h1&gt;Привет&lt;/h1&gt;</td></tr>
+                <tr><td>&lt;p&gt;</td><td>Абзац текста</td><td>&lt;p&gt;Текст...&lt;/p&gt;</td></tr>
+                <tr><td>&lt;a&gt;</td><td>Гиперссылка</td><td>&lt;a href="url"&gt;Текст&lt;/a&gt;</td></tr>
+                <tr><td>&lt;img&gt;</td><td>Изображение</td><td>&lt;img src="photo.jpg" alt="описание"&gt;</td></tr>
+                <tr><td>&lt;ul&gt;, &lt;li&gt;</td><td>Маркированный список</td><td>&lt;ul&gt;&lt;li&gt;Пункт&lt;/li&gt;&lt;/ul&gt;</td></tr>
+                <tr><td>&lt;ol&gt;, &lt;li&gt;</td><td>Нумерованный список</td><td>&lt;ol&gt;&lt;li&gt;Первый&lt;/li&gt;&lt;/ol&gt;</td></tr>
+                <tr><td>&lt;div&gt;</td><td>Блочный контейнер</td><td>&lt;div class="card"&gt;...&lt;/div&gt;</td></tr>
+                <tr><td>&lt;span&gt;</td><td>Строчный контейнер</td><td>&lt;span style="color:red"&gt;важно&lt;/span&gt;</td></tr>
+                <tr><td>&lt;strong&gt;</td><td>Жирный текст (логическое выделение)</td><td>&lt;strong&gt;Важно&lt;/strong&gt;</td></tr>
+                <tr><td>&lt;em&gt;</td><td>Курсив (логическое выделение)</td><td>&lt;em&gt;курсив&lt;/em&gt;</td></tr>
+                <tr><td>&lt;br&gt;</td><td>Перенос строки</td><td>Текст&lt;br&gt;новая строка</td></tr>
+                <tr><td>&lt;hr&gt;</td><td>Горизонтальная линия</td><td>&lt;hr&gt;</td></tr>
+            </table>
+            <p><strong>Важно:</strong> каждый открывающий тег должен иметь закрывающий (кроме самозакрывающихся, например <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>).</p>
+        </div>
+
+        <div class="card">
+            <h2>Пример простой HTML-страницы</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это мой первый сайт.&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Сохраните этот код в файл <code>index.html</code> и откройте в браузере — вы увидите свою первую веб-страницу!</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026, Проект ученика 10 класса. Буклет — продукт проекта.</p>
+    </footer>
+</body>
+</html>

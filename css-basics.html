@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Веб-старт</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="html-basics.html">HTML</a>
+            <a href="css-basics.html">CSS</a>
+            <a href="guide.html">Гайд</a>
+            <a href="about.html">О проекте</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Что такое CSS?</h2>
+            <p><strong>CSS (Cascading Style Sheets)</strong> — каскадные таблицы стилей. Они отвечают за внешний вид веб-страницы: цвета, шрифты, расположение блоков, анимацию. HTML задаёт структуру, а CSS — оформление.</p>
+            <p>CSS появился в 1996 году и позволил отделить содержимое от представления.</p>
+        </div>
+
+        <div class="card">
+            <h2>Синтаксис CSS</h2>
+            <pre><code>селектор {
+    свойство: значение;
+    другое-свойство: значение;
+}</code></pre>
+            <p>Пример:</p>
+            <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}</code></pre>
+            <p>Этот код сделает все абзацы синими с размером шрифта 16 пикселей.</p>
+        </div>
+
+        <div class="card">
+            <h2>Основные свойства CSS</h2>
+            <table>
+                <tr>
+                    <th>Свойство</th>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr><td><code>color</code></td><td>red, #ff0000, rgb(255,0,0)</td><td>Цвет текста</td></tr>
+                <tr><td><code>background-color</code></td><td>#f4f4f4, lightblue</td><td>Цвет фона</td></tr>
+                <tr><td><code>font-size</code></td><td>16px, 1.2rem, 80%</td><td>Размер шрифта</td></tr>
+                <tr><td><code>font-family</code></td><td>Arial, 'Segoe UI', sans-serif</td><td>Тип шрифта</td></tr>
+                <tr><td><code>margin</code></td><td>10px, 0 auto</td><td>Внешний отступ</td></tr>
+                <tr><td><code>padding</code></td><td>10px, 1rem</td><td>Внутренний отступ</td></tr>
+                <tr><td><code>border</code></td><td>1px solid black</td><td>Граница</td></tr>
+                <tr><td><code>width</code></td><td>100%, 500px</td><td>Ширина элемента</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Селекторы CSS</h2>
+            <ul>
+                <li><strong>По тегу:</strong> <code>p { }</code> — все абзацы.</li>
+                <li><strong>По классу:</strong> <code>.card { }</code> — все элементы с class="card".</li>
+                <li><strong>По id:</strong> <code>#header { }</code> — элемент с id="header".</li>
+                <li><strong>Универсальный:</strong> <code>* { }</code> — все элементы.</li>
+            </ul>
+            <p>В этом сайте все карточки оформлены через класс <code>.card</code>, а шапка — через тег <code>header</code>.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026, Проект ученика 10 класса. Буклет — продукт проекта.</p>
+    </footer>
+</body>
+</html>

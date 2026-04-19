@@ -1,0 +1,194 @@
+/* --------------------------------------------------
+   style.css – полная версия для проекта
+   Проект: Веб-старт. Автор: ученик 10 класса
+-------------------------------------------------- */
+
+/* 1. Глобальный сброс и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* 2. Шапка сайта и навигация */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* 3. Основной контент */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: 70vh;
+}
+
+/* Карточки */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Заголовки */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-left: 5px solid #f39c12;
+    padding-left: 15px;
+}
+
+h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2c3e50;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Примеры кода */
+pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+code {
+    background: #eee;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #c7254e;
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* Списки */
+ul, ol {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+li {
+    margin: 0.3rem 0;
+}
+
+/* Кнопка (для демонстрации) */
+.btn {
+    display: inline-block;
+    background: #f39c12;
+    color: #2c3e50;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e67e22;
+    color: white;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #ccc;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность (мобильные устройства) */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    main {
+        padding: 0 15px;
+    }
+    .card {
+        padding: 1rem;
+    }
+    table, th, td {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
